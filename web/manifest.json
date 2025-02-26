@@ -1,0 +1,35 @@
+{
+    "name": "feedify",
+    "short_name": "feedify",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#0175C2",
+    "theme_color": "#0175C2",
+    "description": "**Feedify** is a smart food app that connects users with local restaurants, food vendors, and home chefs.   It offers quick and easy food ordering with personalized meal recommendations.   Enjoy real-time delivery tracking and exclusive deals.   Discover diverse cuisines and share dining experiences with the community.   **Feedify** makes every meal convenient, fresh, and delicious!",
+    "orientation": "portrait-primary",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

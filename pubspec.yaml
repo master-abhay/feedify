@@ -1,0 +1,31 @@
+name: feedify
+description: "**Feedify** is a smart food app that connects users with local restaurants, food vendors, and home chefs.   It offers quick and easy food ordering with personalized meal recommendations.   Enjoy real-time delivery tracking and exclusive deals.   Discover diverse cuisines and share dining experiences with the community.   **Feedify** makes every meal convenient, fresh, and delicious!"
+
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  flutter_lints: ^3.0.0
+
+
+
+flutter:
+  uses-material-design: true
+#  assets:
+#    - assets/images/

@@ -1,0 +1,2 @@
+C:/Users/abhay/Documents/Project Tabu/feedify/android/app/.cxx/Debug/1p4b175u/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/abhay/Documents/Project Tabu/feedify/android/app/.cxx/Debug/1p4b175u/arm64-v8a/CMakeFiles/rebuild_cache.dir
