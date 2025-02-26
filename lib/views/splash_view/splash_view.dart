@@ -1,4 +1,5 @@
 import 'package:feedify/core/mixins/media_query_mixin.dart';
+import 'package:feedify/core/services/navigation_services.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -11,6 +12,12 @@ class SplashView extends StatefulWidget {
 }
 
 class _SplashViewState extends State<SplashView> with MediaQueryMixin{
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -47,7 +54,7 @@ class _SplashViewState extends State<SplashView> with MediaQueryMixin{
             child: const Image(
               image: AssetImage("assets/splash/bg_small_burger.png"),
             )),
-        /// LOGO or Title
+        /// Logo or Title
         Positioned.fill(
           bottom: screenHeight/5,
           child: Container(

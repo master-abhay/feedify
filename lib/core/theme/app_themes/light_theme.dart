@@ -5,11 +5,12 @@ import '../app_colors.dart';
 
 final lightTheme = ThemeData(
   useMaterial3: true,
+  textTheme: GoogleFonts.poppinsTextTheme(),
   colorScheme: ColorScheme.fromSeed(
     brightness: Brightness.light,
     seedColor: AppColors.brightRed,
     primary: AppColors.brightRed,
     onPrimary: AppColors.lightPink,
   ),
-  textTheme: GoogleFonts.poppinsTextTheme(),
+  scaffoldBackgroundColor: Colors.white
 );

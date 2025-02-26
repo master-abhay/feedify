@@ -1,43 +1,56 @@
 import 'package:flutter/material.dart';
 
-class AppDimensions {
-  // Card radii
-  static const double cardRadiusSmall = 8.0;
-  static const double cardRadiusMedium = 12.0;
-  static const double cardRadiusLarge = 16.0;
+// Card radii
+const double cardRadiusSmall = 8.0;
+const double cardRadiusMedium = 12.0;
+const double cardRadiusLarge = 16.0;
+const double cardRadiusExtraLarge = 20.0;
 
-  // Heights
-  static const double appBarHeight = kToolbarHeight;
-  static const double buttonHeight = 48.0;
-  static const double textFieldHeight = 56.0;
+/// text field radius
+const double smallTextFieldRadius = 5;
+const double mediumTextFieldRadius = 10;
+const double largeTextFieldRadius = 15;
+const double extraLargeTextFieldRadius = 20;
 
-  // Paddings
-  static const EdgeInsets kPadding = EdgeInsets.all(15);
-  static const EdgeInsets cardPadding = EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0,);
 
-  // Margins
-  static const EdgeInsets sectionMargin = EdgeInsets.symmetric(vertical: 16.0);
+// Heights
+const double appBarHeight = kToolbarHeight;
+const double buttonHeight = 48.0;
+const double textFieldHeight = 56.0;
 
-  // Border Radii
-  static final BorderRadius cardBorderRadiusSmall = BorderRadius.circular(cardRadiusSmall);
-  static final BorderRadius cardBorderRadiusMedium = BorderRadius.circular(cardRadiusMedium);
-  static final BorderRadius cardBorderRadiusLarge = BorderRadius.circular(cardRadiusLarge);
+/// padding spaces
+const double horizontalPaddingSpace = 15.0;
 
-  // Shadows
-  static const List<BoxShadow> defaultBoxShadow = [BoxShadow(
-      color: Colors.black12,
-      blurRadius: 8.0,
-      offset: Offset(0, 4),
-    ),
-  ];
 
-  // Spacing
-  static const double spacingSmall = 8.0;
-  static const double spacingMedium = 16.0;
-  static const double spacingLarge = 24.0;
+// Paddings
+const EdgeInsets kPadding = EdgeInsets.all(15);
+const EdgeInsets kVerticalPadding = EdgeInsets.symmetric(vertical: 15);
+const EdgeInsets kHorizontalPadding  = EdgeInsets.symmetric(horizontal: 15);
+const EdgeInsets cardPadding = EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0);
 
-  // sized box for spacing between widgets
-  static const SizedBox smallSizedBox = SizedBox.square(dimension: spacingSmall);
-  static const SizedBox mediumSizedBox = SizedBox.square(dimension: spacingMedium);
-  static const SizedBox largeSizedBox = SizedBox.square(dimension: spacingLarge);
-}
+// Margins
+const EdgeInsets sectionMargin = EdgeInsets.symmetric(vertical: 16.0);
+
+// Border Radii
+final BorderRadius cardBorderRadiusSmall = BorderRadius.circular(cardRadiusSmall);
+final BorderRadius cardBorderRadiusMedium = BorderRadius.circular(cardRadiusMedium);
+final BorderRadius cardBorderRadiusLarge = BorderRadius.circular(cardRadiusLarge);
+
+// Shadows
+const List<BoxShadow> defaultBoxShadow = [
+  BoxShadow(
+    color: Colors.black12,
+    blurRadius: 8.0,
+    offset: Offset(0, 4),
+  ),
+];
+
+// Spacing
+const double spacingSmall = 8.0;
+const double spacingMedium = 16.0;
+const double spacingLarge = 24.0;
+
+// SizedBoxes for spacing between widgets
+const SizedBox smallSizedBox = SizedBox.square(dimension: spacingSmall);
+const SizedBox mediumSizedBox = SizedBox.square(dimension: spacingMedium);
+const SizedBox largeSizedBox = SizedBox.square(dimension: spacingLarge);
