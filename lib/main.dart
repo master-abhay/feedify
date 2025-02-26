@@ -1,3 +1,4 @@
+import 'package:feedify/core/services/navigation_services.dart';
 import 'package:feedify/core/theme/app_themes/light_theme.dart';
 import 'package:feedify/views/splash_view/splash_view.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: lightTheme,
-      home: const SplashView(),
+      navigatorKey: NavigationServices.instance.navigationStateKey,
+      routes: NavigationServices.instance.routes,
+      initialRoute: NavigationServices.mainView,
     );
   }
 }
