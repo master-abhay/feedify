@@ -1,8 +1,6 @@
 import 'package:feedify/core/components/tooltip/gesture_tooltip.dart';
 import 'package:feedify/core/mixins/media_query_mixin.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../../core/utils/app_dimensions.dart';
@@ -249,7 +247,8 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
   /// CONTENT
   Widget _content() {
     return GridView.builder(
-      shrinkWrap: true,
+      padding: const EdgeInsets.only(top: spacingMedium),
+      itemCount: 20,
       physics: const AlwaysScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
@@ -312,5 +311,4 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
           );
         });
   }
-
 }
