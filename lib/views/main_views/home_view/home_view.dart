@@ -247,7 +247,7 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
   /// CONTENT
   Widget _content() {
     return GridView.builder(
-      padding: const EdgeInsets.only(top: spacingMedium),
+      padding:  const EdgeInsets.only(top: spacingMedium,bottom: spacingLarge),
       itemCount: 20,
       physics: const AlwaysScrollableScrollPhysics(),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
