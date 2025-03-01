@@ -1,5 +1,6 @@
 import 'package:feedify/core/mixins/media_query_mixin.dart';
 import 'package:feedify/core/services/navigation_services.dart';
+import 'package:feedify/core/utils/app_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -60,7 +61,7 @@ class _SplashViewState extends State<SplashView> with MediaQueryMixin{
           child: Container(
               alignment: Alignment.center,
               child:  Text(
-                "Feedify",
+                AppConstants.appName,
                 style: GoogleFonts.lobster(
                   color: Colors.white,
                   decoration: TextDecoration.none,
