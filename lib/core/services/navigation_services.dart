@@ -51,12 +51,12 @@ class NavigationServices {
     navigationStateKey.currentState?.pushReplacement(route);
   }
 
-  void pushNamed({required String route}) {
-    navigationStateKey.currentState?.pushNamed(route);
+  void pushNamed({required String route,Object? arguments}) {
+    navigationStateKey.currentState?.pushNamed(route,arguments: arguments);
   }
 
-  void pushReplacementNamed({required String route}) {
-    navigationStateKey.currentState?.pushReplacementNamed(route);
+  void pushReplacementNamed({required String route,Object? arguments}) {
+    navigationStateKey.currentState?.pushReplacementNamed(route,arguments: arguments);
   }
 
   dynamic goBack({dynamic object}) {
