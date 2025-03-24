@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: lightTheme,
       navigatorKey: NavigationServices.instance.navigationStateKey,
       routes: NavigationServices.instance.routes,
-      initialRoute: NavigationServices.homeView,
+      initialRoute: NavigationServices.loginView,
     );
   }
 }

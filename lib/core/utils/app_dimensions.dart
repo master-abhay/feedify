@@ -48,34 +48,33 @@ const List<BoxShadow> defaultBoxShadow = [
 ];
 
 // Spacing Constants
-const double spacingExtraSmall = 4.0;
-const double spacingSmall = 8.0;
-const double spacingMedium = 16.0;
-const double spacingLarge = 24.0;
-const double spacingExtraLarge = 32.0;
-const double spacingXXL = 40.0;
+const double extraSmall = 4.0;
+const double small = 8.0;
+const double medium = 16.0;
+const double large = 24.0;
+const double extraLarge = 32.0;
+const double xXL = 40.0;
 
 // Horizontal SizedBoxes for spacing between widgets (Width)
-const SizedBox extraSmallWidthSizedBox = SizedBox(width: spacingExtraSmall);
-const SizedBox smallWidthSizedBox = SizedBox(width: spacingSmall);
-const SizedBox mediumWidthSizedBox = SizedBox(width: spacingMedium);
-const SizedBox largeWidthSizedBox = SizedBox(width: spacingLarge);
-const SizedBox extraLargeWidthSizedBox = SizedBox(width: spacingExtraLarge);
-const SizedBox xxlWidthSizedBox = SizedBox(width: spacingXXL);
+const SizedBox extraSmallWidthSizedBox = SizedBox(width: extraSmall);
+const SizedBox smallWidthSizedBox = SizedBox(width: small);
+const SizedBox mediumWidthSizedBox = SizedBox(width: medium);
+const SizedBox largeWidthSizedBox = SizedBox(width: large);
+const SizedBox extraLargeWidthSizedBox = SizedBox(width: extraLarge);
+const SizedBox xxlWidthSizedBox = SizedBox(width: xXL);
 
 // Vertical SizedBoxes for spacing between widgets (Height)
-const SizedBox extraSmallHeightSizedBox = SizedBox(height: spacingExtraSmall);
-const SizedBox smallHeightSizedBox = SizedBox(height: spacingSmall);
-const SizedBox mediumHeightSizedBox = SizedBox(height: spacingMedium);
-const SizedBox largeHeightSizedBox = SizedBox(height: spacingLarge);
-const SizedBox extraLargeHeightSizedBox = SizedBox(height: spacingExtraLarge);
-const SizedBox xxlHeightSizedBox = SizedBox(height: spacingXXL);
+const SizedBox extraSmallHeightSizedBox = SizedBox(height: extraSmall);
+const SizedBox smallHeightSizedBox = SizedBox(height: small);
+const SizedBox mediumHeightSizedBox = SizedBox(height: medium);
+const SizedBox largeHeightSizedBox = SizedBox(height: large);
+const SizedBox extraLargeHeightSizedBox = SizedBox(height: extraLarge);
+const SizedBox xxlHeightSizedBox = SizedBox(height: xXL);
 
 // Square SizedBoxes for equal spacing
-const SizedBox extraSmallSizedBox = SizedBox.square(dimension: spacingExtraSmall);
-const SizedBox smallSizedBox = SizedBox.square(dimension: spacingSmall);
-const SizedBox mediumSizedBox = SizedBox.square(dimension: spacingMedium);
-const SizedBox largeSizedBox = SizedBox.square(dimension: spacingLarge);
-const SizedBox extraLargeSizedBox = SizedBox.square(dimension: spacingExtraLarge);
-const SizedBox xxlSizedBox = SizedBox.square(dimension: spacingXXL);
-
+const SizedBox extraSmallSizedBox = SizedBox.square(dimension: extraSmall);
+const SizedBox smallSizedBox = SizedBox.square(dimension: small);
+const SizedBox mediumSizedBox = SizedBox.square(dimension: medium);
+const SizedBox largeSizedBox = SizedBox.square(dimension: large);
+const SizedBox extraLargeSizedBox = SizedBox.square(dimension: extraLarge);
+const SizedBox xxlSizedBox = SizedBox.square(dimension: xXL);
