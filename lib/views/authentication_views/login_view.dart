@@ -1,5 +1,5 @@
 import 'package:feedify/core/components/text_fields/custom_text_field.dart';
-import 'package:feedify/core/utils/app_dimensions.dart';
+import 'package:feedify/core/constants/app_dimensions.dart';
 import 'package:feedify/core/widgets/auth_background.dart';
 import 'package:flutter/material.dart';
 

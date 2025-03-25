@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../theme/app_colors.dart';
-import '../../utils/app_dimensions.dart';
+import '../../constants/app_dimensions.dart';
 import '../input_borders_hub/input_borders_hub.dart';
 
 class CustomTextField extends StatelessWidget {

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../components/tooltip/gesture_tooltip.dart';
+import '../constants/app_constants.dart';
 import '../services/navigation_services.dart';
-import '../utils/app_constants.dart';
-import '../utils/app_dimensions.dart';
+import '../constants/app_dimensions.dart';
 
 class AuthBackground extends StatelessWidget {
   final Widget child;

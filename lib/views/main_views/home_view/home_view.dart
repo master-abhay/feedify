@@ -1,10 +1,10 @@
 import 'package:feedify/core/components/tooltip/gesture_tooltip.dart';
 import 'package:feedify/core/mixins/media_query_mixin.dart';
-import 'package:feedify/core/utils/app_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../../../core/utils/app_dimensions.dart';
+import '../../../core/constants/app_constants.dart';
+import '../../../core/constants/app_dimensions.dart';
 
 class HomeView extends StatefulWidget {
   const HomeView({super.key});
