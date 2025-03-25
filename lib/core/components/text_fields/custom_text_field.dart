@@ -5,7 +5,9 @@ import '../../theme/app_colors.dart';
 import '../../constants/app_dimensions.dart';
 import '../input_borders_hub/input_borders_hub.dart';
 
+
 class CustomTextField extends StatelessWidget {
+  final TextEditingController? controller;
   final FocusNode focusNode;
   final FocusNode? nextFocusNode;
   final IconData? icon;
@@ -20,6 +22,7 @@ class CustomTextField extends StatelessWidget {
 
   const CustomTextField({
     super.key,
+    this.controller,
     required this.focusNode,
     this.nextFocusNode,
     this.icon,
@@ -36,6 +39,7 @@ class CustomTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       focusNode: focusNode,
       onTap: onTap,
       onTapOutside: (pointerDownEvent) => focusNode.unfocus(),
