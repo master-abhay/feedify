@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Feedify',
+      title: 'Flutter Demo',
       theme: lightTheme,
       navigatorKey: NavigationServices.instance.navigationStateKey,
       routes: NavigationServices.instance.routes,
