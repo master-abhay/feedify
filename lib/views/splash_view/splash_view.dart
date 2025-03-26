@@ -1,5 +1,4 @@
 import 'package:feedify/core/mixins/media_query_mixin.dart';
-import 'package:feedify/core/services/navigation_services.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 

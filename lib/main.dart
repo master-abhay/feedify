@@ -1,7 +1,9 @@
-import 'package:feedify/core/services/navigation_services.dart';
+import 'package:feedify/core/services/navigation_services/route_names.dart';
 import 'package:feedify/core/theme/app_themes/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'core/services/navigation_services/navigation_services.dart';
+import 'core/services/navigation_services/routes.dart';
 import 'firebase_options.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,8 +23,8 @@ class MyApp extends StatelessWidget {
       title: 'Feedify',
       theme: lightTheme,
       navigatorKey: NavigationServices.instance.navigationStateKey,
-      routes: NavigationServices.instance.routes,
-      initialRoute: NavigationServices.loginView,
+      onGenerateRoute: Routes.onGenerateRoute,
+      initialRoute: RouteNames.loginView,
     );
   }
 }
