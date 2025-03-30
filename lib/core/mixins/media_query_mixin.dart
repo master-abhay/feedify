@@ -18,3 +18,4 @@ mixin MediaQueryMixin<T extends StatefulWidget> on State<T> {
   double get onePixel => 1 / MediaQuery.of(context).devicePixelRatio;
 
 }
+

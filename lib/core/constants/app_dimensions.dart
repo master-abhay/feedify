@@ -28,7 +28,7 @@ const double horizontalPaddingSpace = 15.0;
 
 
 // Paddings
-const EdgeInsets kPadding = EdgeInsets.all(15);
+const EdgeInsets kPadding = EdgeInsets.all(10);
 const EdgeInsets kVerticalPadding = EdgeInsets.symmetric(vertical: 15);
 const EdgeInsets kHorizontalPadding  = EdgeInsets.symmetric(horizontal: 10);
 const EdgeInsets cardPadding = EdgeInsets.symmetric(horizontal: 16.0, vertical: 12.0);

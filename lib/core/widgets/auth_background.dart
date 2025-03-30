@@ -1,10 +1,12 @@
+import 'package:feedify/core/extensions/build_context_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+
 import '../components/tooltip/gesture_tooltip.dart';
-import '../constants/app_constants.dart';
+import '../constants/constants.dart';
 import '../constants/app_dimensions.dart';
-import '../services/navigation_services/navigation_services.dart';
+import '../services/services.dart';
 
 class AuthBackground extends StatelessWidget {
   final Widget child;
@@ -25,7 +27,7 @@ class AuthBackground extends StatelessWidget {
                   GestureTooltip(
                     tooltip: "Go Back",
                     borderRadius: radiusLarge,
-                    onTap: NavigationServices.instance.goBack,
+                    onTap: getIt<BaseNavigationService>().goBack,
                     child: const Padding(
                       padding: kHorizontalPadding,
                       child: Icon(
@@ -39,7 +41,7 @@ class AuthBackground extends StatelessWidget {
 
               /// app name
               Text(
-                AppConstants.appName,
+                context.l10n.appName,
                 style: GoogleFonts.lobster(
                   color: Colors.white,
                   fontSize: 64,
@@ -50,7 +52,7 @@ class AuthBackground extends StatelessWidget {
 
               /// Welcome text
               Text(
-                AppConstants.greetingText,
+                context.l10n.appSlogan,
                 style: const TextStyle(
                   color: Colors.white,
                   fontSize: 24,

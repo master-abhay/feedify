@@ -1,4 +1,5 @@
 import 'package:feedify/core/components/tooltip/gesture_tooltip.dart';
+import 'package:feedify/core/extensions/build_context_extensions.dart';
 import 'package:feedify/core/mixins/media_query_mixin.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -21,12 +22,12 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     return Scaffold(
-        // backgroundColor: theme.colorScheme.onPrimary,
-        body: _buildUi(context:context,theme: theme),
+      // backgroundColor: theme.colorScheme.onPrimary,
+      body: _buildUi(context: context, theme: theme),
     );
   }
 
-  Widget _buildUi({required BuildContext context,required ThemeData theme}) {
+  Widget _buildUi({required BuildContext context, required ThemeData theme}) {
     return Column(
       children: [
         Padding(
@@ -66,7 +67,7 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
               children: [
                 /// Title
                 Text(
-                  AppConstants.appName,
+                  context.l10n.appName,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.lobster(
                     fontSize: 45,
@@ -75,8 +76,8 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
                 ),
 
                 /// Description
-                 Text(
-                  AppConstants.appSlogan,
+                Text(
+                  context.l10n.appSlogan,
                   style: const TextStyle(fontSize: 18),
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -93,12 +94,12 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
                 height: 60,
                 width: 60,
                 decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(radiusLarge),
-                    image: DecorationImage(
+                  borderRadius: BorderRadius.circular(radiusLarge),
+                  image: DecorationImage(
                       fit: BoxFit.fill,
                       image: NetworkImage(AppConstants.profileImageDummy),
-                      onError: (object,stackTrace)=>  AssetImage(AppConstants.onErrorAssetImage)
-                    ),
+                      onError: (object, stackTrace) =>
+                          AssetImage(AppConstants.onErrorAssetImage)),
                 ),
               ))
         ],
@@ -130,8 +131,7 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
                           0, 0), // Ensures the shadow is evenly distributed
                     ),
                   ],
-                  borderRadius:
-                      BorderRadius.circular(radiusExtraLarge),
+                  borderRadius: BorderRadius.circular(radiusExtraLarge),
                 ),
                 child: TextField(
                   onChanged: (value) {},
@@ -148,6 +148,7 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
                     _searchFocusNode.unfocus();
                   },
                   decoration: InputDecoration(
+                    hintText: context.l10n.appSlogan,
                     prefixIcon: const Icon(
                       Icons.search_outlined,
                       size: 25,
@@ -239,9 +240,13 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
               padding: const EdgeInsets.symmetric(horizontal: 16),
               alignment: Alignment.center,
               decoration: BoxDecoration(
-                color: isActive ? theme.colorScheme.primary : Colors.grey.shade300,
+                color:
+                    isActive ? theme.colorScheme.primary : Colors.grey.shade300,
                 borderRadius: BorderRadius.circular(isActive ? 20.0 : 12.0),
-                border: Border.all(color: isActive ? theme.colorScheme.primary : Colors.grey.shade400),
+                border: Border.all(
+                    color: isActive
+                        ? theme.colorScheme.primary
+                        : Colors.grey.shade400),
                 boxShadow: isActive
                     ? [
                         BoxShadow(
@@ -347,7 +352,7 @@ class _HomeViewState extends State<HomeView> with MediaQueryMixin {
                             tooltip: "Add to Favourite",
                             onTap: () {
                               setState(() {
-                                inFavourites =!inFavourites;
+                                inFavourites = !inFavourites;
                               });
                             },
                             borderRadius: 30,
