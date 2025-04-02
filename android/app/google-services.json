@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "331317022062",
-    "project_id": "feedify-43813",
-    "storage_bucket": "feedify-43813.firebasestorage.app"
+    "project_number": "842691558760",
+    "firebase_url": "https://feedify-e4e20-default-rtdb.firebaseio.com",
+    "project_id": "feedify-e4e20",
+    "storage_bucket": "feedify-e4e20.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:331317022062:android:7823c13e5e3eb03f55057f",
+        "mobilesdk_app_id": "1:842691558760:android:712ac9ed164d72ba822add",
         "android_client_info": {
           "package_name": "com.master.feedify"
         }
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAJQASWim6-KYa9Newl3GMgRs_ScrYfdOQ"
+          "current_key": "AIzaSyCMw9U9AnoY2_juMI-7EdLrirpnduBTn_k"
         }
       ],
       "services": {

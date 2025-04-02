@@ -1,3 +1,4 @@
+import 'package:feedify/core/extensions/build_context_extensions.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -7,10 +8,10 @@ import 'package:feedify/core/themes/themes.dart';
 
 
 class CustomTextField extends StatelessWidget {
-  final TextEditingController? controller;
+  final TextEditingController controller;
   final FocusNode focusNode;
   final FocusNode? nextFocusNode;
-  final IconData? icon;
+  final Widget? suffixIcon;
   final String? labelText;
   final String? hintText;
   final VoidCallback? onTap;
@@ -19,13 +20,14 @@ class CustomTextField extends StatelessWidget {
   final VoidCallback? onEditingComplete;
   final Function(PointerUpEvent pointerUpEvent)? onTapUpOutside;
   final bool? obscureText;
+  final String? Function(String? string)? validator;
 
   const CustomTextField({
     super.key,
-    this.controller,
+    required this.controller,
     required this.focusNode,
     this.nextFocusNode,
-    this.icon,
+    this.suffixIcon,
     this.labelText,
     this.hintText,
     this.onTap,
@@ -34,6 +36,7 @@ class CustomTextField extends StatelessWidget {
     this.onEditingComplete,
     this.onTapUpOutside,
     this.obscureText,
+    this.validator,
   });
 
   @override
@@ -51,22 +54,23 @@ class CustomTextField extends StatelessWidget {
       cursorColor: AppColors.warmGray,
       cursorWidth: 1.25,
       obscureText: obscureText ?? false,
+      validator: validator,
       decoration: InputDecoration(
         labelText: labelText ?? "Label",
+        alignLabelWithHint: true,
         floatingLabelStyle: GoogleFonts.inter(
           color: Colors.black,
           fontSize: 12,
           fontWeight: FontWeight.normal,
         ),
-        alignLabelWithHint: true,
+        labelStyle: const TextStyle(color:  AppColors.warmGray),
+        hintStyle: const TextStyle(color:  AppColors.warmGray),
         contentPadding: const EdgeInsets.symmetric(
           horizontal: extraLarge,
+          vertical: medium,
         ),
         hintText: hintText ?? "Enter hint",
-        suffixIcon: icon != null ?   Icon(
-         icon ??  Icons.emoji_emotions,
-          color: AppColors.warmGray,
-        ) : null ,
+        suffixIcon: suffixIcon ,
         border: InputBorderHub.outlinedInputBorder(),
         errorBorder: InputBorderHub.outlinedInputBorder(borderColor: Colors.red),
         focusedBorder: InputBorderHub.outlinedInputBorder(),

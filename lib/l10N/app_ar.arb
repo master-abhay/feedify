@@ -2,5 +2,19 @@
   "test": "test arb",
   "appName": "Feedify",
   "appSlogan": "Order Your Favorite Food!",
-  "greetingText": "Welcome to Foodie Express!"
+  "greetingText": "Welcome to Foodie Express!",
+  "email": "Email",
+  "emailHint": "Enter your email",
+  "password": "Password",
+  "passwordHint": "Enter your password",
+  "forgotYourPassword" : "Forgot you password?",
+  "login": "Login",
+  "loginInCaps": "LOGIN",
+  "loginTooltip": "Press to login",
+  "alreadyHaveAnAccount": "Already have an account?",
+  "doNotHaveAnAccount": "Don't have an account?",
+  "signUp": "Sign Up",
+  "signUpTooltip": "Press to sign up",
+  "signUpInCaps": "SIGN UP"
+
 }

@@ -4,6 +4,7 @@ abstract class BaseNavigationService {
   // GlobalKey for navigation state
   final GlobalKey<NavigatorState> navigationStateKey = GlobalKey<NavigatorState>();
 
+
   void push({required Route route});
 
   void pushReplacement({required Route route});

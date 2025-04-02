@@ -10,6 +10,8 @@ class Routes {
     switch (settings.name) {
       case RouteNames.splashView:
         return _customRoute(widget: const SplashView(),);
+      case RouteNames.loginView:
+        return _customRoute(widget: const LoginView(),);
       case RouteNames.mainView:
         return _customRoute(widget: const MainView(),);
       case RouteNames.homeView:

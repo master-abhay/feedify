@@ -34,8 +34,8 @@ class ServiceLocator {
 
 
 
+      getIt.registerSingleton<BaseNavigationService>(NavigationService());
       getIt.registerLazySingleton<InternetController>(() => InternetController());
-      getIt.registerLazySingleton<BaseNavigationService>(() => NavigationService());
       getIt.registerLazySingleton<BaseMediaService>(() => MediaService());
       getIt.registerLazySingleton<BaseAlertService>(() => SnackBarAlertService());
       getIt.registerLazySingleton<BaseStorageService>(() => StorageService());

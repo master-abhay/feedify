@@ -118,6 +118,84 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Welcome to Foodie Express!'**
   String get greetingText;
+
+  /// No description provided for @email.
+  ///
+  /// In en, this message translates to:
+  /// **'Email'**
+  String get email;
+
+  /// No description provided for @emailHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your email'**
+  String get emailHint;
+
+  /// No description provided for @password.
+  ///
+  /// In en, this message translates to:
+  /// **'Password'**
+  String get password;
+
+  /// No description provided for @passwordHint.
+  ///
+  /// In en, this message translates to:
+  /// **'Enter your password'**
+  String get passwordHint;
+
+  /// No description provided for @forgotYourPassword.
+  ///
+  /// In en, this message translates to:
+  /// **'Forgot you password?'**
+  String get forgotYourPassword;
+
+  /// No description provided for @login.
+  ///
+  /// In en, this message translates to:
+  /// **'Login'**
+  String get login;
+
+  /// No description provided for @loginInCaps.
+  ///
+  /// In en, this message translates to:
+  /// **'LOGIN'**
+  String get loginInCaps;
+
+  /// No description provided for @loginTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Press to login'**
+  String get loginTooltip;
+
+  /// No description provided for @alreadyHaveAnAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account?'**
+  String get alreadyHaveAnAccount;
+
+  /// No description provided for @doNotHaveAnAccount.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account?'**
+  String get doNotHaveAnAccount;
+
+  /// No description provided for @signUp.
+  ///
+  /// In en, this message translates to:
+  /// **'Sign Up'**
+  String get signUp;
+
+  /// No description provided for @signUpTooltip.
+  ///
+  /// In en, this message translates to:
+  /// **'Press to sign up'**
+  String get signUpTooltip;
+
+  /// No description provided for @signUpInCaps.
+  ///
+  /// In en, this message translates to:
+  /// **'SIGN UP'**
+  String get signUpInCaps;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -1,7 +1,8 @@
 
+import 'package:feedify/core/extensions/build_context_extensions.dart';
+
 import 'alert_services.dart';
 import 'package:flutter/material.dart';
-
 class SnackBarAlertService extends BaseAlertService {
   @override
   void showAlert(String message, {String? title}) {
@@ -9,7 +10,8 @@ class SnackBarAlertService extends BaseAlertService {
   }
 
   @override
-  void showErrorAlert(String message,{Duration? duration}) {
+  void showErrorAlert(String message, {Duration? duration}) {
+
     _showSnackBar(message, backgroundColor: Colors.red);
   }
 
@@ -19,10 +21,17 @@ class SnackBarAlertService extends BaseAlertService {
   }
 
   void _showSnackBar(String message, {Color backgroundColor = Colors.black, Duration? duration}) {
-    if (context == null) return;
 
-    ScaffoldMessenger.of(context!)..hideCurrentSnackBar()..showSnackBar(
-      SnackBar(content: Text(message), backgroundColor: backgroundColor,duration: duration ?? const Duration(seconds: 3),),
-    );
+    if (appContext == null) return;
+    ScaffoldMessenger.of(appContext!)
+      ..hideCurrentSnackBar()
+      ..showSnackBar(
+        SnackBar(
+          behavior: SnackBarBehavior.floating,
+          content: Text(message,style: appContext?.theme.textTheme.bodyMedium?.copyWith(color: Colors.white),),
+          backgroundColor: backgroundColor,
+          duration: duration ?? const Duration(seconds: 3),
+        ),
+      );
   }
 }

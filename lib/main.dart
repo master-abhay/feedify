@@ -1,17 +1,22 @@
 import 'package:feedify/controller/internet/internet_controller.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'package:feedify/core/services/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'core/themes/themes.dart';
+import 'firebase_options.dart';
 import 'l10N/app_localizations.dart';
 
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  /// add firebase options here
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   ServiceLocator().init();  /// initialize service locator
   getIt<InternetController>().init(); /// initialize internet controller
-  /// add firebase options here
   runApp(const MyApp());
 }
 
@@ -40,7 +45,7 @@ class MyApp extends StatelessWidget {
       ],
       locale: const Locale('en'),
       onGenerateRoute: Routes.onGenerateRoute,
-      initialRoute: RouteNames.mainView,
+      initialRoute: RouteNames.splashView,
     );
   }
 }
